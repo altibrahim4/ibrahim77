@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Web Page</title>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set the background image */
+        body {
+            height: 100vh;
+            background-image: url('nature-3082832_1280.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        /* Top navigation bar */
+        .top-nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .top-nav a:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Centered login button */
+        .center-content {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-button {
+            text-decoration: none;
+            color: white;
+            background-color: rgba(255, 99, 71, 0.8); /* Tomato color with transparency */
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: rgba(255, 99, 71, 1);
+            transform: scale(1.05);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .top-nav {
+                flex-direction: column;
+                left: 10px;
+                top: 10px;
+            }
+
+            .top-nav a {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+
+            .login-button {
+                padding: 12px 24px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        
+    </div>
+
+    <!-- Centered Login Button -->
+    <div class="center-buttons">
+    <button onclick="location.href='login.html'">Login</button>
+    <button onclick="location.href='signup.html'">Sign Up</button>
+</div>
+
+</body>
+</html>
